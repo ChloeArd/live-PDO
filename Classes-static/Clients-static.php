@@ -5,6 +5,6 @@ class ClientsStatic {
     private ?PDO $db;
 
     public function getClients() {
-        $this->db = DbStatic::getLink();
+        $this->db = DB::getInstance();
     }
 }
